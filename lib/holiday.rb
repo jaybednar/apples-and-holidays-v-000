@@ -78,9 +78,7 @@ def all_supplies_in_holidays(holiday_hash)
       holiday_string = holiday.to_s
       binding.pry
       if holiday_string.include?('_')
-
         holiday_string_chomped = holiday_string.chomp('_')
-
       end
       puts "  #{holiday_string_chomped.capitalize}: #{supply_list.join(', ')}"
       # supply_list.each do |supply|
